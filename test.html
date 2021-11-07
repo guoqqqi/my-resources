@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let money = 100;
+      const atm = prompt(
+        "1.存钱" + "\n" + "2.取钱" + "\n" + "3.显示余额" + "\n" + "4.退出"
+      );
+      switch (atm) {
+        case "1":
+          // 1. 存钱时：
+          const addMoney = prompt("输入你想存入的钱数");
+          const nowMoney = money + Number(addMoney);
+          alert("你现在的钱数是" + nowMoney);
+        case "2":
+          // 2. 取钱：
+          const removeMoney = prompt("输入你想取出的钱数");
+          const currentMoney = money - Number(removeMoney);
+          alert("你现在的钱数是" + currentMoney);
+        case "3":
+          alert('你的余额是' + money);
+        case "4":
+          break;
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
